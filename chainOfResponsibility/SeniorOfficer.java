@@ -4,7 +4,7 @@ public class SeniorOfficer extends AbstractAuthorizer {
     }
 
     @Override
-    protected void withdraw(Account account, int requestedAmount) {
+    protected void processAuthorization( int requestedAmount) {
         System.out.println("The amount " + requestedAmount + " is authorized by the SeniorOfficer");
     }
 }
