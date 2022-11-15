@@ -1,10 +1,9 @@
 public class Account {
     private String name;
-    private int balance;
 
-    public Account(String name, int balance) {
+    public Account(String name) {
         this.name = name;
-        this.balance = balance;
+
     }
 
     // Getters and setters for all properties
@@ -16,11 +15,4 @@ public class Account {
         return name;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
-    }
-
-    public int getBalance() {
-        return balance;
-    }
 }

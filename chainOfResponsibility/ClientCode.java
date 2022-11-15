@@ -1,8 +1,8 @@
 public class ClientCode {
     public static void main(String[] args) {
         AbstractAuthorizer authorizerChain = new WithDrawChain().getAuthorizerChain();
-        Account account = new Account("Asibul Hasan",200000);
+        Account account = new Account("Asibul Hasan");
 
-        authorizerChain.withdRaw(account,8000);
+        authorizerChain.authorize(account,500000);
     }
 }
